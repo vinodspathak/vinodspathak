@@ -10,7 +10,6 @@ eta = 2/lambda+1;
 if head >= a % non-cavitation
     % k = kMax*((theta/eta)+((1-(theta/eta))*((a-head)/a)^2)); % [mm/s]
     k = kMax*(theta/epsilon+(1-theta/epsilon)*((a-head)/a)^2);
-    % k = kMax*(head/a)^(-lambda*eta);
 else % cavitation
     % k =  (kMax*(head/a)^(-lambda*(2/(lambda+1))));  % [mm/s] ;
     k = kMax*(head/a)^(-lambda*eta);
